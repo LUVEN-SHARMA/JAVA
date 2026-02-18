@@ -7,12 +7,9 @@ public interface interface1 {
 }
 
 class TestInterface implements A, interface1 {
-    @Override
     public void show(){
         System.out.println("hello");
     }
-    
-    @Override
     public void print(){
         System.out.println("welcome");
     }
