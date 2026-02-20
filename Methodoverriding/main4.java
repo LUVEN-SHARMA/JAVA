@@ -3,14 +3,21 @@
 class Animal{
     String name;
     int age;
-    Animal(String name, int age){
+    Animal(String name){
         this.name=name;
-        this.age=age;
+    }
+    void display(){
+        System.out.println(name);
     }
 }
 class Dog extends Animal{
     Dog(String name, int age){
-        super(name, age);
+        super(name);
+        this.age=age;
+    }
+    void show(){
+        System.out.println(name);
+        System.out.println(age);
     }
     void displayAge(){
         System.out.println("Age of dog is: "+age);
@@ -20,6 +27,7 @@ class Dog extends Animal{
 public class main4 {
     public static void main(String[] args) {
         Dog d=new Dog("Tommy", 5);
+        d.show();
         d.displayAge();
     }
 }
