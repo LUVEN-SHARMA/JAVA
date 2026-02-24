@@ -9,13 +9,20 @@ class Test extends Calculator{
     void add(int a, int b){
         System.out.println("The sum is: " + (a+b));
     }
+    void subtract(int a, int b){
+        System.out.println("The difference is: " + (a-b));
+    }
+    void multiply(int a, int b){
+        System.out.println("The product is: " + (a*b));
+    }
 }
-
 
 public class main1 {
     public static void main(String[] args) {
         Test t = new Test();
         t.add(5, 3);
+        t.subtract(5, 3);
+        t.multiply(5, 3);
         t.show();
     }
 }
